@@ -1,0 +1,18 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+
+# Editor swap files
+*.swp
+
+# macOS system files
+.DS_Store
+
+# Logs and test cache
+*.log
+.pytest_cache/
