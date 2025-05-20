@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/banner.png" alt="WhaleScope banner" width="100%" />
+</p>
 # 🐋 WhaleScope (`whalescope.py`)
 
 **WhaleScope** is a real-time Ethereum monitoring tool for tracking large on-chain transactions ("whales"). It listens to the mempool using Infura WebSocket and displays any ETH transactions over a specified threshold or large token purchases via decentralized exchanges (DEX).
