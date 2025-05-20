@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Format with Black",
+            "type": "shell",
+            "command": "black .",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run WhaleScope",
+            "type": "shell",
+            "command": "python3 whalescope.py",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
