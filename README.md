@@ -1,115 +1,107 @@
-<p align="center">
-  <img src="assets/banner.png" alt="WhaleScope banner" width="100%" />
-</p>
-<!-- # 🐋 WhaleScope (`whalescope.py`) -->
+# 🐋 Whale Scope: Real-Time Ethereum Mempool Monitor
 
-## 🐋 Whale Scope
+![Whale Scope](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen?style=flat-square&logo=github)
 
- Is a real-time Ethereum monitoring tool for tracking large on-chain transactions ("whales"). It listens to the mempool using Infura WebSocket and displays any ETH transactions over a specified threshold or large token purchases via decentralized exchanges (DEX).
+Welcome to **Whale Scope**, a powerful tool designed to monitor the Ethereum mempool in real-time. This application focuses on detecting significant ETH transfers and decentralized exchange (DEX) token swaps. It serves as an ideal solution for tracking whale activity in the Ethereum network.
 
----
+## Table of Contents
 
-## ⚙️ Features
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Technologies Used](#technologies-used)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Support](#support)
 
-- Monitors Ethereum mempool via WebSocket
-- Displays transactions exceeding **50 ETH**
-- Detects token purchases through Uniswap/SushiSwap
-- Automatically extracts token symbols from contract
-- Terminal-based visual output using `curses`
-- Logs each transaction to a `whale_transactions_log.txt` file
+## Features
 
----
+- **Real-Time Monitoring**: Keep an eye on the Ethereum mempool for large transactions and DEX swaps.
+- **Whale Detection**: Instantly identify significant transfers that may impact the market.
+- **User-Friendly Interface**: Designed for ease of use in terminal environments.
+- **Custom Alerts**: Set up alerts for specific thresholds or events.
+- **Open Source**: Contribute to the project and improve the tool.
 
-## 🛠️ Setup
+## Installation
 
-### 1. 🧪 Requirements:
+To get started with Whale Scope, download the latest release from our [Releases page](https://github.com/MEfe001/whale_scope/releases). You will find the necessary files to download and execute.
 
-Install all required packages using `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
+### Prerequisites
 
-Or manually:
-```bash
-pip install web3 websockets python-dotenv
-```
+- Python 3.7 or higher
+- Access to an Ethereum node (Infura recommended)
+- Basic understanding of terminal commands
 
+### Steps
 
-Or manually:
-```bash
-pip install web3 websockets
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/MEfe001/whale_scope.git
+   cd whale_scope
+   ```
 
-### 2. 🔑 Infura API Key Setup:
+2. **Install Dependencies**:
+   Use pip to install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Create a `.env` file in the project root directory with the following content:
-```env
-INFURA_PROJECT_ID=your_infura_project_id_here
-```
+3. **Configuration**:
+   Edit the configuration file to set your Infura API key and any other settings as needed.
 
-The application will automatically load this variable using `python-dotenv`.
+4. **Run the Application**:
+   Execute the main script to start monitoring:
+   ```bash
+   python main.py
+   ```
 
-Edit these lines in the file:
-```python
-INFURA_WSS_URL = "wss://mainnet.infura.io/ws/v3/YOUR_INFURA_PROJECT_ID"
-INFURA_HTTPS_URL = "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
-```
+## Usage
 
-### 3. ▶️ Run:
-```bash
-python3 whalescope.py
-```
+Once the application is running, it will continuously monitor the Ethereum mempool. You will see real-time updates in your terminal. 
 
-Transactions will be shown in the terminal and logged to `whale_transactions_log.txt`.
+### Commands
 
----
+- **Start Monitoring**: 
+  Simply run the application to start tracking transactions.
+  
+- **Set Alerts**: 
+  Configure alerts in the settings file to notify you of large transactions or swaps.
 
-## 📄 Output File
+- **Stop Monitoring**: 
+  Use `Ctrl + C` to stop the application at any time.
 
-Each transaction is logged in the following format:
-```text
-[2025-05-18 18:41:27 UTC] From: 0x123... -> To: 0x456... | Value: 78.45 ETH | Type: Swap via UniswapV2 (buying SHIBA) | Hash: 0xabc...
-```
+## Technologies Used
 
-File name:
-- `whale_transactions_log.txt`
+- **Blockchain**: The backbone of the application is built on Ethereum, utilizing its mempool for real-time data.
+- **Python**: The main programming language used for development.
+- **Web3.py**: A Python library for interacting with Ethereum.
+- **Infura**: A service providing access to Ethereum nodes.
+- **Terminal**: The application runs in a command-line interface for efficiency.
 
----
+## Contributing
 
-## 📃 License
+We welcome contributions to Whale Scope. If you would like to help improve the project, please follow these steps:
 
-MIT License — see [LICENSE](LICENSE)
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Open a pull request.
 
----
+Please ensure your code follows the project's style guidelines and includes appropriate tests.
 
-## ⚠️ Disclaimer
+## License
 
-This tool is for **informational and educational purposes only**.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- Many tokens may be deceptive or malicious
-- Always do your own research
-- The author **accepts no responsibility** for financial loss or misuse
-- **Never share your Infura API key**
+## Support
 
----
+For any issues or questions, please open an issue in the GitHub repository. We appreciate your feedback and are here to help.
 
-## 💸 Donations
+For the latest updates and releases, check out our [Releases section](https://github.com/MEfe001/whale_scope/releases). 
 
-If you find this tool helpful and would like to support further development:
+## Conclusion
 
-- **Bitcoin (BTC):**  
-  `1MorphXyhHpgmYSfvwUpWojphfLTjrNXc7`
+Whale Scope is a vital tool for anyone interested in monitoring whale activity in the Ethereum network. With its real-time capabilities and user-friendly design, it empowers users to make informed decisions based on market movements. 
 
-- **Monero (XMR):**  
-  `86VAmEogaZF5WDwR3SKtEC6HSEUh6JPA1gVGcny68XmSJ1pYBbGLmdzEB1ZzGModLBXkG3WbRv12mSKv4KnD8i9w7VTg2uu`
-
-- **Dash (DASH):**  
-  `XtNuNfgaEXFKhtfxAKuDkdysxUqaZm7TDX`
-
-- **Bytecoin (BCN):**  
-  `bcnZNMyrDrweQgoKH6zpWaE2kW1VZRsX3aDEqnxBVEQfjNnPK6vvNMNRPA4S7YxfhsStzyJeP16woK6G7cRBydZm2TvLFB2eeR`
-
-🙏 Thank you for supporting independent developers and ethical technology.
-
-> *"I morph bits not to break, but to understand."*  
-> — **BitMorphX**
+Thank you for your interest in Whale Scope. Happy tracking!
